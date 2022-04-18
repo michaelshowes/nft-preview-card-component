@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: #0d192b;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #8bacda;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #00fff7;
+}
+
+hr {
+  border: none;
+  background-color: #2f415b;
+  height: 1px;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container .card {
+  background: #14253d;
+  border-radius: 18px;
+  width: 325px;
+  padding: 1.4rem;
+  margin-bottom: 1.25rem;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.container .card .nft {
+  position: relative;
+  cursor: pointer;
+}
+
+.container .card .nft .main-image {
+  width: 100%;
+  border-radius: .6rem;
+}
+
+.container .card .nft:hover .overlay {
+  opacity: .5;
+}
+
+.container .card .nft:hover .eye {
+  opacity: 1;
+}
+
+.container .card .overlay,
+.container .card .eye {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 280.22px;
+  border-radius: .6rem;
+  -webkit-transition: opacity .08s ease-in-out;
+  transition: opacity .08s ease-in-out;
+}
+
+.container .card .overlay {
+  background: #00fff7;
+}
+
+.container .card .eye {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .eye img {
+  width: 48px;
+  height: 48px;
+}
+
+.container .card .content {
+  margin: 1.2rem 0 .2rem;
+}
+
+.container .card .content .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .6rem 0;
+}
+
+.container .card .content .stats .eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #00fff7;
+  font-weight: 700;
+}
+
+.container .card .content .stats .eth::before {
+  content: url(/images/icon-ethereum.svg);
+  margin-right: .3rem;
+}
+
+.container .card .content .stats .time::before {
+  content: url(/images/icon-clock.svg);
+  margin-right: .3rem;
+}
+
+.container .card .content .avatar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 34px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+.container .card .content .creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
